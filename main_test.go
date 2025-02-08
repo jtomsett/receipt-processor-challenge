@@ -112,7 +112,7 @@ func TestItemLengthBonus(t *testing.T) {
 		},
 	}
 	pts := calculateItemLengthBonus(items)
-	if pts != 2 {
+	if pts != 10 {
 		t.Fatalf(`%d item length should be %d points!`, len(items), 2)
 	}
 }
@@ -149,8 +149,8 @@ func TestItemLengthBonusOdd(t *testing.T) {
 		},
 	}
 	pts := calculateItemLengthBonus(items)
-	if pts != 1 {
-		t.Fatalf(`%d item length should be %d points!`, len(items), 1)
+	if pts != 5 {
+		t.Fatalf(`%d item length should be %d points!`, len(items), 5)
 	}
 }
 

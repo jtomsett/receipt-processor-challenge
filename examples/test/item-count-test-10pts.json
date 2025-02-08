@@ -1,0 +1,24 @@
+{
+  "retailer": "$ % $",
+  "purchaseDate": "2022-01-02",
+  "purchaseTime": "08:13",
+  "total": "2.16",
+  "items": [
+    {
+      "shortDescription": "Mo",
+      "price": "6.49"
+    },{
+      "shortDescription": "Em",
+      "price": "12.25"
+    },{
+      "shortDescription": "Kn",
+      "price": "1.26"
+    },{
+      "shortDescription": "Do",
+      "price": "3.35"
+    },{
+      "shortDescription": "   Kl  ",
+      "price": "12.00"
+    }
+  ]
+}

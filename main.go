@@ -144,7 +144,7 @@ func calculateItemLengthBonus(items []item) int {
 	if items == nil {
 		return 0
 	}
-	return int(math.Floor(float64(len(items) / 2)))
+	return int(math.Floor(float64(len(items)/2))) * 5
 }
 
 func calculateItemDescBonus(items []item) (int, error) {
@@ -182,11 +182,11 @@ func calculateTimeOfDayBonus(purchaseTime string) (int, error) {
 	startTime, _ := time.Parse("15:04", "14:00")
 	endTime, _ := time.Parse("15:04", "16:00")
 
-	time, err := time.Parse("15:04", purchaseTime)
+	parsedTime, err := time.Parse("15:04", purchaseTime)
 	if err != nil {
 		return 0, err
 	}
-	if time.Before(endTime) && time.After(startTime) {
+	if parsedTime.Before(endTime) && parsedTime.After(startTime) {
 		return 10, nil
 	}
 	return 0, nil
